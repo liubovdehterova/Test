@@ -1,0 +1,1344 @@
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Regular.svg"), url("../fonts/Inter-Regular.eot"), url("../fonts/Inter-Regular.ttf"), url("../fonts/Inter-Regular.woff"), url("../fonts/Inter-Regular.woff2");
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.svg"), url("../fonts/Roboto-Regular.eot"), url("../fonts/Roboto-Regular.ttf"), url("../fonts/Roboto-Regular.woff"), url("../fonts/Roboto-Regular.woff2");
+}
+
+/* line 19, C:/Users/Liubov/Desktop/test/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 23, C:/Users/Liubov/Desktop/test/scss/style.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto-Regular', sans-serif;
+  overflow-x: hidden;
+}
+
+/* line 30, C:/Users/Liubov/Desktop/test/scss/style.scss */
+a {
+  text-decoration: none;
+  color: #4CB649;
+}
+
+/* line 35, C:/Users/Liubov/Desktop/test/scss/style.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 41, C:/Users/Liubov/Desktop/test/scss/style.scss */
+p {
+  margin: 0;
+}
+
+/* line 45, C:/Users/Liubov/Desktop/test/scss/style.scss */
+img {
+  width: 100%;
+}
+
+/* line 49, C:/Users/Liubov/Desktop/test/scss/style.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 53, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.hidden {
+  display: none;
+}
+
+/* line 57, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* line 61, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.burger__mob {
+  display: none;
+}
+
+/* line 64, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.search-mob {
+  display: none;
+}
+
+/* line 67, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header {
+  background: #22252E;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/* line 74, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner {
+  text-align: center;
+  position: relative;
+}
+
+/* line 78, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* line 84, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__list__item {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+  color: #889099;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* line 92, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__list__item:first-child {
+  color: #FF8D00;
+}
+
+/* line 96, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__list__item:last-child {
+  margin-right: 0;
+}
+
+/* line 100, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__list__item__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 107, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__close {
+  position: absolute;
+  right: 21px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+}
+
+/* line 114, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__close__span {
+  display: block;
+  background: #FFFFFF;
+  width: 14px;
+  height: 3px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 3px;
+}
+
+/* line 123, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.fixed__header__inner__close__span:last-child {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* line 132, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header {
+  max-width: 1300px;
+  margin: 0 auto 40px;
+  padding-top: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 140, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__logo {
+  font-family: 'Inter';
+  font-size: 18px;
+  line-height: 22px;
+  padding: 6px 0;
+}
+
+/* line 146, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__logo__link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 152, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  list-style: none;
+}
+
+/* line 157, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation__mob {
+  display: none;
+}
+
+/* line 160, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation li {
+  position: relative;
+}
+
+/* line 162, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation li:hover .header__navigation__link__list {
+  opacity: 1;
+  transition: opacity 500ms ease-out;
+}
+
+/* line 167, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation__link {
+  text-decoration: none;
+  border-bottom: 3px solid rgba(76, 182, 73, 0);
+  margin-right: 30px;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+/* line 174, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation__link:last-child {
+  margin-right: 0;
+}
+
+/* line 177, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation__link__list {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  background: #fff;
+  padding: 15px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  opacity: 0;
+}
+
+/* line 188, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__navigation__link:hover {
+  border-bottom: 3px solid #4cb649;
+}
+
+/* line 196, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__button__inner {
+  border: 1px solid #4CB649;
+  border-radius: 30px;
+  color: #4CB649;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background: none;
+  padding: 11px 16px;
+  cursor: pointer;
+}
+
+/* line 210, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.header__button__inner:last-child {
+  background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+  color: #FFFFFF;
+}
+
+/* line 218, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv {
+  background: #FFFFFF;
+  border: 1px solid #D7D8D9;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+  display: flex;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+/* line 227, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__img {
+  width: 50%;
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+}
+
+/* line 233, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information {
+  width: 50%;
+  padding: 60px 60px 40px 60px;
+}
+
+/* line 237, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__inner {
+  font-size: 24px;
+  line-height: 34px;
+  color: #22252E;
+  margin-bottom: 84px;
+}
+
+/* line 244, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__news {
+  margin-bottom: 12px;
+}
+
+/* line 247, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__news__author {
+  color: #323642;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 253, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__news__date {
+  color: #889099;
+}
+
+/* line 258, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__tags {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+/* line 263, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__tags__inner__link {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* line 270, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__comments {
+  display: flex;
+}
+
+/* line 273, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tv__information__comments__img {
+  margin-right: 12px;
+}
+
+/* line 280, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags {
+  background: #F7F7F7;
+  border-radius: 4px;
+  padding: 21px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+/* line 290, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 295, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__inner__title {
+  color: #323642;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 43px;
+}
+
+/* line 305, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__inner__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 310, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__inner__list__item {
+  margin-right: 38px;
+}
+
+/* line 313, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__inner__list__item__link {
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #4CB649;
+  font-size: 14px;
+}
+
+/* line 323, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 328, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__link__inner {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+  margin-right: 43px;
+  font-size: 14px;
+}
+
+/* line 335, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__tags__link__inner:last-child {
+  margin-right: 0;
+}
+
+/* line 342, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+/* line 347, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news {
+  width: 63%;
+  border-right: 1px solid #EBECED;
+}
+
+/* line 351, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__title {
+  color: #22252E;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+/* line 358, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks {
+  border-bottom: 1px solid #EBECED;
+  display: flex;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 364, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__img {
+  width: 280px;
+  height: 180px;
+}
+
+/* line 369, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__information {
+  padding: 0 0 53px 40px;
+  width: 85%;
+}
+
+/* line 373, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__information__title {
+  color: #22252E;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 7px 0;
+}
+
+/* line 382, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__news {
+  margin-bottom: 8px;
+}
+
+/* line 385, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__news__date {
+  color: #889099;
+}
+
+/* line 390, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__tags {
+  display: flex;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* line 396, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__tags__inner__link {
+  font-size: 12px;
+}
+
+/* line 401, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__comments {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+/* line 405, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__blocks__comments__img {
+  margin-right: 12px;
+}
+
+/* line 412, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar {
+  width: 31%;
+}
+
+/* line 415, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__announcements {
+  border-bottom: 1px solid #EBECED;
+  padding-bottom: 20px;
+  margin-bottom: 42px;
+}
+
+/* line 420, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__announcements__title {
+  display: flex;
+  align-items: center;
+}
+
+/* line 424, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__announcements__title svg {
+  margin-right: 30px;
+}
+
+/* line 429, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__announcements__list {
+  list-style: inside;
+}
+
+/* line 432, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__announcements__list__inner {
+  margin-bottom: 16px;
+}
+
+/* line 435, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__announcements__list__inner__link {
+  color: #323642;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 444, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__banner {
+  background: url("../banner/banner.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 454px;
+  margin-bottom: 40px;
+}
+
+/* line 452, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__sidebar__tag__title {
+  color: #22252E;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* line 462, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.main__body__news__button {
+  background: none;
+  color: #4CB649;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #4CB649;
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* line 478, C:/Users/Liubov/Desktop/test/scss/style.scss */
+#search-blog {
+  padding: 20px 58px;
+  background: #FFFFFF;
+  border: 1px solid #D7D8D9;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* line 486, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.search {
+  position: relative;
+}
+
+/* line 489, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.search__inner {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+}
+
+/* line 496, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price {
+  background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+  padding: 100px 0 57px 0;
+}
+
+/* line 500, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__title {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+/* line 510, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 516, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner {
+  background: #FFFFFF;
+  border: 1px solid #EBECED;
+  border-radius: 6px;
+  padding: 48px 87px 40px;
+  width: 380px;
+  height: 340px;
+}
+
+/* line 524, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__time {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #323642;
+}
+
+/* line 533, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__time:after {
+  content: '';
+  display: block;
+  background: #4CB649;
+  width: 24px;
+  height: 2px;
+  margin: 12px auto 16px;
+}
+
+/* line 543, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__money {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #EBECED;
+  justify-content: center;
+}
+
+/* line 550, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__money__icon {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #22252E;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+/* line 559, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__money__other {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* line 563, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__money__other__num {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -1.5px;
+  color: #22252E;
+}
+
+/* line 571, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__money__other__val {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #22252E;
+}
+
+/* line 580, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__sale {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #323642;
+  margin: 27px 0 30px 0;
+}
+
+/* line 588, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__sale-item {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+/* line 593, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__sale__discount {
+  color: #F24458;
+  text-decoration-line: line-through;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 601, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner__sale__interest {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323642;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 612, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner:nth-child(2) {
+  border: 4px solid #4CB649;
+  border-radius: 4px;
+  width: 380px;
+  height: 380px;
+}
+
+/* line 618, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner:nth-child(2) .price__blocks__inner {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+}
+
+/* line 628, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__blocks__inner:nth-child(2) .main__body__news__button {
+  background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+
+/* line 637, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 642, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__partners__title {
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+/* line 649, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__partners__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 654, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__partners__inner__list {
+  margin-right: 30px;
+}
+
+/* line 657, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__partners__inner__list svg {
+  width: 100%;
+}
+
+/* line 665, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__link {
+  text-align: center;
+  margin-top: 33px;
+}
+
+/* line 669, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__link__inner {
+  margin-right: 44px;
+}
+
+/* line 672, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.price__link__inner svg {
+  margin-left: 17px;
+}
+
+/* line 679, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer {
+  margin-top: 85px;
+}
+
+/* line 682, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__logo {
+  margin-bottom: 58px;
+}
+
+/* line 685, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__logo__link {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+}
+
+/* line 694, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 697, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__menu {
+  display: flex;
+  width: 50%;
+}
+
+/* line 701, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__menu__company {
+  margin-right: 46px;
+}
+
+/* line 703, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__menu__company__list {
+  margin-bottom: 20px;
+}
+
+/* line 705, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__menu__company__list-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+  margin-bottom: 20px;
+}
+
+/* line 714, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__menu__company__list__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #889099;
+}
+
+/* line 723, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__menu__edition .footer__main__menu__company {
+  margin-bottom: 58px;
+}
+
+/* line 728, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about {
+  width: 50%;
+}
+
+/* line 730, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about__title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+}
+
+/* line 739, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about__information {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #889099;
+  margin-bottom: 18px;
+}
+
+/* line 747, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about__social__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+  margin-bottom: 26px;
+}
+
+/* line 756, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about__social__list {
+  display: flex;
+}
+
+/* line 758, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about__social__list__icon {
+  margin-right: 31px;
+}
+
+/* line 760, C:/Users/Liubov/Desktop/test/scss/style.scss */
+.footer__main__about__social__list__icon:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1125px) {
+  /* line 771, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body {
+    padding: 0 10px;
+    margin-bottom: 73px;
+  }
+  /* line 775, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news {
+    width: 75%;
+  }
+  /* line 778, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar {
+    width: 20%;
+  }
+  /* line 781, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__banner {
+    height: 300px;
+  }
+  /* line 784, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks__inner {
+    padding: 40px;
+    width: 30%;
+  }
+  /* line 788, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks {
+    padding: 0 10px;
+  }
+  /* line 791, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+  /* line 796, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv {
+    display: block;
+  }
+  /* line 799, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv__img {
+    width: 100%;
+    padding: 600px 0 0 0;
+  }
+  /* line 803, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv__information {
+    width: 100%;
+  }
+  /* line 806, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .burger__mob {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 20px;
+  }
+  /* line 811, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .burger__mob span {
+    display: block;
+    background: #000000;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 5px;
+  }
+  /* line 819, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__navigation {
+    display: none;
+  }
+  /* line 822, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__navigation__mob {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+  /* line 827, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header {
+    padding: 102px 10px 0;
+    align-items: flex-start;
+  }
+  /* line 831, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__navigation__link__list {
+    position: relative;
+    display: none;
+  }
+  /* line 835, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__navigation__mob li,
+  .header__navigation__mob a {
+    margin-bottom: 15px;
+  }
+  /* line 839, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__navigation__mob li:hover .header__navigation__link__list {
+    opacity: 1;
+    transition: opacity 500ms ease-out;
+    display: block;
+    top: 0;
+  }
+  /* line 845, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news__blocks {
+    display: block;
+  }
+  /* line 848, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news__blocks__img {
+    width: 100%;
+    height: 310px;
+  }
+  /* line 852, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news {
+    width: 65%;
+  }
+  /* line 855, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar {
+    width: 30%;
+  }
+  /* line 858, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tags__inner__title {
+    margin-right: 10px;
+  }
+  /* line 861, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tags__inner__list__item {
+    margin-right: 20px;
+  }
+  /* line 864, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tags__link__inner {
+    margin-right: 15px;
+  }
+  /* line 867, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  /* line 872, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu,
+  .footer__main__about {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 879, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tags {
+    display: none;
+  }
+  /* line 882, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body {
+    flex-direction: column;
+  }
+  /* line 885, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .search {
+    display: none;
+  }
+  /* line 888, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .search-mob {
+    display: block;
+  }
+  /* line 891, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news {
+    border-right: 1px solid rgba(235, 236, 237, 0);
+  }
+  /* line 894, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news {
+    width: 100%;
+  }
+  /* line 897, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar {
+    width: 100%;
+  }
+  /* line 900, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__tag img {
+    width: 35%;
+  }
+  /* line 903, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__banner {
+    height: 455px;
+    background-position-x: center;
+  }
+  /* line 907, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__tag {
+    text-align: center;
+  }
+  /* line 910, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 914, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks__inner {
+    margin-bottom: 25px;
+    width: 80%;
+  }
+  /* line 918, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks__inner:nth-child(2) {
+    border: 4px solid #FF8D00;
+    width: 80%;
+  }
+  /* line 922, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks__inner:nth-child(2) .main__body__news__button {
+    background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+  }
+  /* line 925, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__partners,
+  .price__partners__inner {
+    flex-wrap: wrap;
+  }
+  /* line 929, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__tag__title {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  /* line 934, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list__item {
+    width: 45%;
+  }
+  /* line 937, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  /* line 941, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list__item {
+    margin-right: 0;
+  }
+  /* line 944, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list__item:last-child {
+    order: -1;
+  }
+  /* line 947, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list__item:nth-child(2) {
+    order: 1;
+  }
+  /* line 950, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__tag img {
+    width: 60%;
+  }
+  /* line 953, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__partners__inner {
+    padding: 0 15px;
+  }
+  /* line 956, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv__img {
+    padding: 370px 0 0 0;
+  }
+  /* line 959, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 964, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__button__inner:first-child {
+    display: none;
+  }
+  /* line 967, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__logo {
+    padding: 0;
+  }
+  /* line 970, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header__button__inner {
+    padding: 5px 10px;
+  }
+  /* line 973, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .header {
+    padding: 80px 10px 0;
+  }
+  /* line 976, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body {
+    padding: 0;
+  }
+  /* line 979, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv {
+    margin: 0 20px 40px;
+  }
+  /* line 982, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body {
+    margin: 0 30px;
+  }
+  /* line 985, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv__information {
+    padding: 27px 30px 17px 30px;
+  }
+  /* line 988, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news__blocks {
+    margin-right: 0;
+  }
+  /* line 991, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news__blocks__information {
+    padding: 0;
+    width: 100%;
+  }
+  /* line 995, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__tag img {
+    width: 80%;
+  }
+  /* line 998, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar {
+    margin-bottom: 70px;
+  }
+  /* line 1001, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__title {
+    font-size: 32px;
+  }
+  /* line 1004, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__link__inner {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 40px;
+  }
+  /* line 1009, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__link__inner:last-child {
+    margin-bottom: 0;
+  }
+  /* line 1012, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price {
+    padding: 60px 0 44px 0;
+  }
+  /* line 1015, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__blocks__inner {
+    margin-bottom: 20px;
+  }
+  /* line 1018, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer {
+    padding: 0;
+    margin: 0 20px;
+  }
+  /* line 1022, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list {
+    justify-content: space-between;
+  }
+  /* line 1025, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner {
+    margin: 0 20px;
+  }
+  /* line 1028, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__list__item {
+    width: 50%;
+  }
+  /* line 1031, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner__close {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  /* line 1037, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv__img {
+    padding: 200px 0 0 0;
+  }
+  /* line 1040, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__tv__information__tags__inner__link {
+    font-size: 12px;
+  }
+  /* line 1043, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news__blocks__img {
+    height: 200px;
+  }
+  /* line 1046, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__news__blocks__tags {
+    flex-wrap: wrap;
+  }
+  /* line 1049, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main__body__sidebar__tag img {
+    width: 100%;
+  }
+  /* line 1052, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu__company:last-child {
+    margin-right: 0;
+  }
+  /* line 1055, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .main {
+    margin-bottom: 44px;
+  }
+  /* line 1058, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu, .footer__main__about {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* line 1062, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu__company {
+    margin-right: 0;
+  }
+  /* line 1065, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__about__social {
+    display: none;
+  }
+  /* line 1068, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__about__social-mob {
+    display: block;
+    width: 50%;
+  }
+  /* line 1072, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__about__social__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 1076, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu__company__list {
+    margin-bottom: 15px;
+  }
+  /* line 1079, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__about__social__list__icon {
+    margin-bottom: 26px;
+  }
+  /* line 1082, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu {
+    margin-bottom: 40px;
+  }
+  /* line 1085, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__menu__company__list-title {
+    margin-bottom: 18px;
+  }
+  /* line 1088, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__logo {
+    margin-bottom: 54px;
+  }
+  /* line 1091, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__partners__inner__list {
+    margin-bottom: 39px;
+  }
+  /* line 1094, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .price__partners__inner {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  /* line 1099, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .fixed__header__inner {
+    margin: 0 10px;
+  }
+  /* line 1102, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .burger__mob {
+    top: 0;
+    left: 0;
+  }
+  /* line 1106, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__about__social__list__icon:nth-child(3),
+  .footer__main__about__social__list__icon:nth-child(6) {
+    margin-right: 0;
+  }
+  /* line 1110, C:/Users/Liubov/Desktop/test/scss/style.scss */
+  .footer__main__about__social__list__icon {
+    margin-right: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
