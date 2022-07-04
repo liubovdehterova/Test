@@ -61,6 +61,9 @@ button {
 .burger__mob {
   display: none;
 }
+.header__mob {
+  display: none;
+}
 .search-mob {
   display: none;
 }
@@ -792,6 +795,9 @@ button {
     padding: 0 10px;
   }
 }
+.footer__main__about__social-mob {
+  display: none;
+}
 @media only screen and (max-width: 921px) {
   .main__tv {
     display: block;
@@ -815,6 +821,9 @@ button {
       height: 2px;
       margin-bottom: 5px;
     }
+  }
+  .header__mob {
+    display: block;
   }
   .header__navigation {
     display: none;
